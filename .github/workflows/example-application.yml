@@ -42,7 +42,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       env:
-        CYPRESS_FRONTEND_URL: http://localhost:5000
+        CYPRESS_FRONTEND_URL: http://localhost:5001
       with:
         working-directory: ./example-application-cypress
         spec: cypress/integration/backend.spec.js
@@ -59,7 +59,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       env:
-        CYPRESS_FRONTEND_URL: http://localhost:5000
+        CYPRESS_FRONTEND_URL: http://localhost:5001
       with:
         working-directory: ./example-application-cypress
         spec: cypress/integration/redis.spec.js
@@ -76,7 +76,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       env:
-        CYPRESS_FRONTEND_URL: http://localhost:5000
+        CYPRESS_FRONTEND_URL: http://localhost:5001
       with:
         working-directory: ./example-application-cypress
         spec: cypress/integration/postgres.spec.js
